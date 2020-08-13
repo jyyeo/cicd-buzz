@@ -4,4 +4,6 @@ COPY requirements.txt /src/requirements.txt
 RUN pip install -r /src/requirements.txt
 COPY app.py /src
 COPY buzz /src/buzz
+COPY IMG_2664.JPG /src
+COPY index.html /src
 CMD python /src/app.py
