@@ -1,16 +1,15 @@
 
 import os
-from flask import Flask
+from flask import Flask, render_template
 from buzz import generator
 
 app = Flask(__name__)
 
 @app.route("/")
 def generate_buzz():
-    page = '<html><body><h1>'
-    page += generator.generate_buzz()
-    page += '</h1></body></html>'
-    page += <img src="IMG_2664.JPG" alt="Glen Canyon">
+    buzz = generator.generate_buzz()
+    return render_template('index.html', None)
+
     return page
 
 if __name__ == "__main__":
