@@ -10,6 +10,7 @@ def generate_buzz():
     page = '<html><body><h1>'
     page += generator.generate_buzz()
     page += '</h1></body></html>'
+    page += <img src="IMG_2664.JPG" alt="Glen Canyon">
     return page
 
 if __name__ == "__main__":
